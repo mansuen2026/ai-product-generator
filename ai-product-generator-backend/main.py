@@ -35,6 +35,6 @@ def generate_description(product: str, language: str = "en"):
         return {"description": response.output.text}
     except Exception as e:
         return {"error": str(e)}
-#P@ssw0rd2026@@@@
+#P@ssw0rd2026@@@
 # Serve static files from the React build
-app.mount("/", StaticFiles(directory="./build", html=True), name="static")
+app.mount("/", StaticFiles(directory="./ai-product-generator-backend/build", html=True), name="static")
